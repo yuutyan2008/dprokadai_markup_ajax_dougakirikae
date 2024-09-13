@@ -68,6 +68,6 @@ function updateData() {//
   // ここではタグ要素間のテキストを右辺のテキストに置き換える
   // <h1 id="title">ここにdata[number].titleの文字列を入れる</h1>
   contentArea.innerHTML = data[number].content; //
-  videoArea.setAttribute("src", data[number].url); //
+  videoArea.src = data[number].url;//
   number == 2 ? (number = 0) : number++; //最初のデータ(number = 0)がここで次のデータ(number = 1)になる。最後のデータが表示されたら、次は最初のデータに戻す
 }
